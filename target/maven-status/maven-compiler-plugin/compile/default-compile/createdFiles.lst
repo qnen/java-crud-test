@@ -1,0 +1,7 @@
+br\com\alura\tarefas\dao\TarefaDAO.class
+br\com\alura\tarefas\bean\TarefaBean.class
+br\com\alura\tarefas\dao\PopulaBanco.class
+br\com\alura\tarefas\bean\MenuViewBean.class
+br\com\alura\tarefas\model\Tarefa.class
+br\com\alura\tarefas\dao\DAO.class
+br\com\alura\tarefas\dao\JPAUtil.class

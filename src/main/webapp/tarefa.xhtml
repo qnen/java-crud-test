@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<h:body>
+	<h:form>
+		<p:fieldset >
+			<h:panelGrid columns="2">
+				<p:outputLabel value="Título:" for="nome" />
+				<p:inputText id="nome" value="#{tarefaBean.tarefa.titulo}" />
+				<p:outputLabel value="Prazo:" for="prazo" />
+				<p:calendar id="prazo" value="#{tarefaBean.tarefa.prazo}"/>
+				<p:outputLabel value="Descrição:" for="descricao" />
+				<p:inputTextarea id="descricao" value="#{tarefaBean.tarefa.descricao}" />
+				<p:commandButton value="Gravar" action="#{tarefaBean.gravar}"/>
+			</h:panelGrid>
+		</p:fieldset>
+	</h:form>
+</h:body>
+</html>
